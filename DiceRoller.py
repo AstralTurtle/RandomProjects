@@ -17,7 +17,7 @@ def makeDie(input):
     if (input.find('+') != -1):
         sides = int(input[input.find('d')+1:input.find('+')])
         rolls = int(input[0:input.find('d')])
-        mod = int(input[input.find('+')+1])
+        mod = int(input[input.find('+')+1:len(input)])
     elif (input.find('-') != -1):
         sides = int(input[input.find('d')+1:input.find('-')])
         rolls = int(input[0:input.find('d')])
